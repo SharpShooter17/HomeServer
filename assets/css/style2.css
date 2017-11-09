@@ -1,0 +1,52 @@
+body {
+	background-color: gray;
+}
+* {
+margin: 0;
+padding: 0;
+}
+.css_gallery {
+margin: 0 auto;
+width: 720px; /* szerokosc najszerszego zdjêcia + szerokosc miniatur + 40px luzu */
+position: relative;
+overflow: hidden;
+}
+.css_gallery ul {
+list-style-type: none;
+width: 192px; /* szerokosc miniatur */
+height: 375px; /* wysokosc najwyzszego zdjecia + miejsce na ewentualny opis zdjec */
+overflow: auto;
+padding: 0;
+float: left;
+margin: 0 0 30px 0;
+}
+.css_gallery li {
+display: block;
+width: 152px; /* szerokosc miniatury + ew. obramowanie obrazka */
+height: 152px; /* wysokosc miniatury + ew. obramowanie obrazka */
+padding: 5px 20px 5px 0;
+margin: 0;
+}
+.css_gallery li img {
+border: 1px solid #000;
+max-width: 500px;
+max-height: 500px;
+}
+.css_gallery li div {
+display: none;
+}
+.css_gallery ul:hover li:first-child div {
+display: none;
+}
+.css_gallery li:hover div
+,.css_gallery ul li:first-child div
+,.css_gallery ul li:first-child:hover div {
+display: block;
+position: absolute;
+left: 220px; /* szerokosc <ul> + padding <ul> + 20px */
+top: 0;
+}
+.mini_pic {
+	max-height: 256px;
+	max-width: 256px;
+}

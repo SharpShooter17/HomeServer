@@ -1,0 +1,10 @@
+body {
+	background-color: #b4defe;
+}
+
+#left {float:left;width:20%;}
+#right {width:70%;margin-left:1%; position: fixed; top:10px; right:10px;}
+#right li {display:none;}
+#right li:target {display:block;}
+#right img { max-height: 1024px; max-width:769px; }
+#right img:hover {max-height: 90%; max-width: 90%;} 
